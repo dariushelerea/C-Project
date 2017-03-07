@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define DELTA 0.1
+#define DELTA 0.01
 #define Y 1
 #define X 0
 double vx(double v, int s, double x){
@@ -26,7 +26,6 @@ double vy(double v, int s, double y){
   for(s;s>=0;s--){
 
    for(double i=DELTA; i<1;i+=DELTA){
-    if(v>0) {
      v+=y*DELTA;
      printf("--En el segundo %i,%lf, la velocidad de Y es %lf \n",cont-1,i,v);
     }
@@ -35,7 +34,7 @@ double vy(double v, int s, double y){
 
   printf("-En el segundo %i la velocidad de Y es %lf\n",cont,v);
   cont ++;
-  }
+ 
   return v;
 }
 
