@@ -1,21 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <strings.h>
-#define N 3
-#define M 5
+#define N 4
+#define M 3
+#define K 2
 
 int main() {
 
 
-    int A[N][N] = {{1,2,3},{5,6,3},{5,6,7}},
-        B[N][N] = {{1,5,7},{7,5,3},{8,5,3}},
-        C[N][N] ;
+    int A[M][K] = {{1,2},{5,6},{7,5}},
+        B[K][N] = {{1,5,7,5},{4,3,2,5}},
+        C[M][N] ;
 
 bzero(C, sizeof(C));
 
-for(int f=0; f<N; f++)
+for(int f=0; f<M; f++)
     for(int c=0; c<N; c++)
-        for (int k=0; k<N; k++)
+        for (int k=0; k<K; k++)
             C[f][c] = A[f][k] * B[k][c];
 
 //Limpiar matriz c de resultados.    
@@ -25,7 +26,7 @@ for(int f=0; f<N; f++)
 
 //  Para cada valor de k
 //   cij += aik * bkj
-for (int f=0; f<N; f++){
+for (int f=0; f<M; f++){
 for (int c=0; c<N; c++) {
     printf(" %7i", C[f][c]);
 }
