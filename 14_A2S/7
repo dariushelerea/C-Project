@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct Tcoordenada{
+
+   ' int y;'
+   ' int x;'
+
+
+}
+
+struct Tcoordenada a2s( struct Tcoordenada X, struct Tcoordenada Y ){
+
+        
+
+
+}
+
+
+
+int main() {
+
+
+
+
+
+    return EXIT_SUCCESS;
+}
