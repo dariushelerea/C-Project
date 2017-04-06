@@ -1,5 +1,5 @@
 #ifndef __PASO_H__
-#define PASOO_H__
+#define __PASO_H__
 
 #ifdef __cplusplus
 extern "C" {
