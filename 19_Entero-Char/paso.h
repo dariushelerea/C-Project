@@ -1,5 +1,5 @@
-#ifndef __NOTAS_H__
-#define __NOTAS_H__
+#ifndef __PASO_H__
+#define PASOO_H__
 
 #ifdef __cplusplus
 extern "C" {
