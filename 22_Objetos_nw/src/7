@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#include "general.h"
+
+int main(int argc, char *argv[]){
+int a=0,b=0;
+printf(" Dime dumeros para hacer sus operaciones basicas");
+scanf("%i", &a);
+scanf("%i", &b);
+    struct TOp op = new_suma(a,b);
+   
+
+
+
+    
+   // printf("Dame dos numero para sumar\n");
+   // scanf(" %i", &op.op1);
+   //scanf(" %i", &op.op2);
+   // op.operacion = &suma;
+   
+    printf("%i + %i = %i \n", op.op1, op.op2, (*op.operacion)(op.op1, op.op2));
+
+
+
+
+    return EXIT_SUCCESS;
+}
